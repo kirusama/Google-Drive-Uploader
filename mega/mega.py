@@ -43,7 +43,7 @@ class Mega(object):
         req = requests.post(
             'https://g.api.mega.co.nz/cs', params=params, data=data)
         json_data = req.json()
-        if isinstance(json_data, int):
+        if isinstance(json_data):
             raise MegaRequestException(json_data)
         return json_data[0]
 
