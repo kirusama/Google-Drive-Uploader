@@ -1,44 +1,17 @@
 {
-  "name": "GDrive-Uploader-Bot",
-  "description": "Telegram/Direct Links to GDrive Uploader Bot",
-  "repository": "https://github.com/kirusama/Google-Drive-Uploader",
-  "logo": "https://telegra.ph/file/8669281aa2360613f7511.jpg",
-  "keywords": ["Telegram", "Google Drive", "uploader"],
-  "env": {
-    "ENV": {
-      "description": "Set it to anything to enable configuration by environment variables.",
-      "value": "ANYTHING"
-    },
-    "BOT_TOKEN": {
-      "description": "Get it from @BotFather"
-    },
-    "APP_ID": {
-      "description": "Your API_ID, Get it from https://my.telegram.org/apps"
-    },
-    "API_HASH": {
-      "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
-    },
-    "SUDO_USERS": {
-      "description": "List of sudo users ids, seperated by space.",
-      "value": "999197022 939425014"
-    },
-    "SUPPORT_CHAT_LINK": {
-      "description": "Support Chat link in valid url format."
-    },
-    "DOWNLOAD_DIRECTORY": {
-      "description": "Custom path for downloads. Must end with a forward slash.",
-      "value": "./downloads/"
-    }
-  },
-   "addons": [{
-    "plan": "heroku-postgresql"
-  }],
-   "buildpacks": [
-    {
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    }
-  ]
+          "name": "GDrive Uploader Bot",
+          "description": "Gdrive Uploader bot for Telegram. Upload Files via direct link to Google Drive",
+          "repository": "https://github.com/kirusama/Google-Drive-Uploader",
+          "logo": "https://telegra.ph/file/da4d4ff71ea6b59d3694a.jpg",
+          "keywords": ["Google Drive"],
+          "env": {
+                    "BOT_TOKEN": {
+                              "description": "Get it from https://t.me/botfather"
+                    }
+          },
+          "buildpacks": [
+                    {
+                              "url": "heroku/python"
+                    }
+          ]
 }
